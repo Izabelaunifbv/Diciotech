@@ -6,12 +6,10 @@
    box-sizing: border-box;
    font-family: Montserrat, sans-serif;
    font-weight: bold;
-   
-
 }
 
 body{
-   background-color: #8386F5; 
+   background-color: #4D448B; 
 }
 
 /*header, nav {
@@ -27,43 +25,71 @@ body{
    z-index: 100;
 }*/
 
-   header,nav {
+.menu {
    text-align: center;
-   align-items: center;
    list-style-type: none;
+   margin: 0;
    padding: 0;
-   margin: 50px;
    overflow: hidden;
-   display: inline-block;
-   
+   padding: 50px 40px;     
 }
-
-
-
-
+.menu a{
+   color: #DEFE47;
+   text-align: center;
+   padding: 80px 10px 25px 10px;
+   text-decoration: none;
+}
+a:hover {
+   border-radius: 20px;
+   background-color: #DEFE47;
+   color: #000000;
+}
 .logo {
-   position: absolute;
-   top: 10px; /*Ajuste a distância vertical conforme necessário */
-   left: 10px; /*Ajuste a distância horizontal conforme necessário */
-   width: 150px; /*Ajuste tamanho da logo conforme necessário */
-   height: 150px; /*Ajuste tamanho da logo conforme necessário */
-
+   position: absolute; 
+   padding: 20px 30px; 
 }
-
+.acessi{
+   
+   position: absolute; 
+   padding: 0px 1000px ;  
+}
 
 /*Barra de Pesquisa */
-
-.banner__pesquisa::placeholder {
-   color: #000000;
-   background: url(https://www.pngmart.com/files/8/Search-Button-PNG-Transparent-Image.png);
-   background-repeat: no-repeat;
-   background-size: contain;
-   background-position: 2.5em;
-   padding-left:2.5em; 
+.barraInt {
+    text-align: right;
+    display: block;
+    padding: 0px;
+    background-color:  #DEFE47;
+}
+#searchbar{
+   
+    display: flex;
+    border-radius: 60px;
+    padding: 10px 10px 10px 10px;
+    width: 600px;
+    height: 50px;
+    margin: 5px 5px 5px 500px ;
+    border-style: none;
 }
 
+/* Estilização do menu alfabeto */
 
-/*Estilização animação "hello world"*/
+#alfabeto li  {
+   list-style: none;
+   display: inline-block;
+   margin: 0 0 0 10px; 
+}
+
+#alfabeto a  {
+   padding: 2px;
+   text-transform: uppercase;
+   color: #ffffff;
+   font-weight: bold;
+   font-size: 18px;
+   text-decoration: none;
+}
+
+/*Estilização animação "hello world" */
 
 div h1{
    animation: inicializar .7s forwards;
@@ -80,4 +106,3 @@ div h1{
    opacity: 1;
    animation: pisca .5s infinite;  
 }
-
